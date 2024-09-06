@@ -2,10 +2,17 @@ const express = require("express");
 const app = express();
 
 app.set("view engine", "pug");
+app.get("/",(req,res)=>{
+    res.render("index",{
+        title:"Main",
+        message:"Not Main"
+    })
+})
 app.get("/faq", (req,res) => {
     res.render("faq", {
         title: "Обо мне"
     });
+
 
 });
 app.post("/8", (req,res)=>{
@@ -14,4 +21,4 @@ app.post("/8", (req,res)=>{
 
 const server = require("http").createServer(app)
 
-server.listen(3000, "192.168.70.23", ()=>{})
+server.listen(3000, "", ()=>{})
