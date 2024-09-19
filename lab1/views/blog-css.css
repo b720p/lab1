@@ -1,0 +1,36 @@
+
+html,body{
+    margin:0;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header{
+    display:flex;
+    justify-content: space-around;
+    width:500px;
+    margin:0 auto 20px auto;
+}
+.main{
+    display:flex;
+    gap:15px;
+    flex:1;
+}
+aside{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+aside>a{
+    width:100px;
+}
+footer{
+    padding:15px;
+    background-color: rgb(192, 192, 192);
+    text-align: center;
+}
