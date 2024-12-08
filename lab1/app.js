@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 
 app.set("view engine", "pug");
+app.set("views",__dirname + "/views");
 app.get("/blog",(req,res)=>{
     res.render("blog")
 });
